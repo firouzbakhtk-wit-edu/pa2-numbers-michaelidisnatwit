@@ -17,6 +17,19 @@ public class PA2a {
 		for (int i = 0; i < 5; i++) {
 			int num = scanner.nextInt();
 			
+			// Add to some of all the whole numbers
+			sumAll += num;
+			
+			// Checks if number is positive or negative 
+			if (num > 0) {
+				sumPositive += num;
+				countPositive++;
+			} else {
+				sumNonPositive += num;
+				countNonPositive++;
+				
+			}
+			
 		}
 	}
 
