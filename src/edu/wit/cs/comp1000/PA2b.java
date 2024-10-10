@@ -14,6 +14,9 @@ public class PA2b {
 		double b = scanner.nextDouble();
 		double c = scanner.nextDouble();
 		
+		//Calculates discriminant
+		double discriminant = b * b - 4 * a * c;
+		
 		
 	}
 
