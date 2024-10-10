@@ -32,12 +32,16 @@ public class PA2b {
 			double root2 = (-b + Math.sqrt(discriminant)) / (2 * a);
 			
 			// Ensures the roots are printed in the correct order
-			 if root1 > root2) {
+			if (root1 > root2) {
 				double temp = root1;
 				root1 = root2;
 				root2 = temp;
 			}
+			
+			// Print the roots
+			System.out.printf("Roots: %.2f, %.2f%n", root1, root2);
 		}
-	}
 
+    scanner.close();
+	}
 }
