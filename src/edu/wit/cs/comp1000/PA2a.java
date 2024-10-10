@@ -27,15 +27,22 @@ public class PA2a {
 			} else {
 				sumNonPositive += num;
 				countNonPositive++;
+			}
+		}
 				
 				// calculates 
 				double avgPositive = (countPositive > 0) ? (double) sumPositive / countPositive : 0.0;
 				double avgNonPositive = (countNonPositive > 0) ? (double) sumNonPositive / countNonPositive : 0.0;
 				double avgAll = (double) sumAll / 5;
 				
+				//Outputs the results
+				System.out.printf("The sum of the %d positive numbers: %d%n", countPositive, sumPositive);
+				System.out.printf("The sum of the non-positive numbers: %d%n", countNonPositive, sumNonPositive);
+				System.out.printf("The sum of the 5 numbers: %d%n", sumAll);
+				System.out.printf("The average of the %d positive numbers: %.2f%n", countPositive, avgPositive);
+				System.out.printf("The average of the %d non-positive numbers: %.2f%n", countNonPositive, avgNonPositive);
+				System.out.printf("The average of the 5 numbers: %.2f%n", avgAll);
+				
+				scanner.close();
 			}
-			
-		}
 	}
-
-}
