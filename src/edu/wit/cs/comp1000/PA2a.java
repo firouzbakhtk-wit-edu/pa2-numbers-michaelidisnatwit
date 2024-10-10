@@ -28,6 +28,11 @@ public class PA2a {
 				sumNonPositive += num;
 				countNonPositive++;
 				
+				// calculates 
+				double avgPositive = (countPositive > 0) ? (double) sumPositive / countPositive : 0.0;
+				double avgNonPositive = (countNonPositive > 0) ? (double) sumNonPositive / countNonPositive : 0.0;
+				double avgAll = (double) sumAll / 5;
+				
 			}
 			
 		}
